@@ -16,8 +16,12 @@ it('Loops backwards', () => {
   expect(encrypt('afcsb', -1)).toBe('zebra');
 });
 
-it('Hands large offsets', () => {
+it('Handles large offsets', () => {
   expect(encrypt('large', 53)).toBe('mbshf');
+});
+
+it('Hands large negative offsets', () => {
+  expect(encrypt('large', -53)).toBe('kzqfd');
 });
 
 it('Ignores symbols and letters', () => {
@@ -26,4 +30,4 @@ it('Ignores symbols and letters', () => {
 
 it('Is fine with spaces', () => {
   expect(encrypt('Has spaces', 1)).toBe('Ibt tqbdft');
-})
+});
