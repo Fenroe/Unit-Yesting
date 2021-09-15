@@ -13,5 +13,8 @@
     "@babel/preset-env": "^7.15.6",
     "babel": "^6.23.0",
     "jest": "^27.2.0"
+  },
+  "dependencies": {
+    "alphabet": "^1.0.0"
   }
 }
