@@ -1,5 +1,21 @@
 import analyse from "./analyse";
 
+it('Returns average', () => {
+  expect(analyse([2, 5, 8, 10]).average).toBe(6.25);
+});
+
+it('Returns min', () => {
+  expect(analyse([2, 5, 8, 10]).min).toBe(2);
+});
+
+it('Returns max', () => {
+  expect(analyse([2, 5, 8, 10]).max).toBe(10);
+});
+
+it('Returns length', () => {
+  expect(analyse([2, 5, 8, 10]).length).toBe(4);
+});
+
 it('Works', () => {
   expect(analyse([2, 5, 8, 10])).toStrictEqual({ 
     average: 6.25, 
